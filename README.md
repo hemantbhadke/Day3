@@ -1,5 +1,5 @@
 # Getting started with the demo
-## Clone the below sample repository, or you can use any web application that you have
+-> Clone the below sample repository, or you can use any web application that you have
 git clone https://github.com/piyushsachdeva/todoapp-docker.git
 
 -> cd into the directory
@@ -23,21 +23,27 @@ docker build -t todoapp-docker .
 
 -> Verify the image has been created and stored locally using the below command:
 docker images
+
 -> Create a public repository on hub.docker.com and push the image to remote repo
 docker login
 docker tag todoapp-docker:latest username/new-reponame:tagname
 docker images
 docker push username/new-reponame:tagname
+
 -> To pull the image to another environment, you can use the below command
 docker pull username/new-reponame:tagname
+
 -> To start the docker container, use the below command
 docker run -dp 3000:80 username/new-reponame:tagname
+
 -> Verify your app. If you have followed the above steps correctly, your app should be listening on localhost:3000
 ![alt text](image.png)
+
 -> To enter(exec) into the container, use the below command
 docker exec -it containername sh
 or
 docker exec -it containerid sh
+
 -> To view docker logs
 docker logs containername
 or
