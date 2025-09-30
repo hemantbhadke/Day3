@@ -1,5 +1,5 @@
 # Getting started with the demo
--> Clone the below sample repository, or you can use any web application that you have
+## Clone the below sample repository, or you can use any web application that you have
 git clone https://github.com/piyushsachdeva/todoapp-docker.git
 
 -> cd into the directory
